@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { ventes } from "../datas/app_vendre";
+import { Link } from "react-router-dom";
 
 const Avendre = () => {
   return (
@@ -23,9 +24,9 @@ const Avendre = () => {
               <p className="text-[#535B9C] pb-5">{vente.description}</p>
               <p className="text-[#22264B] font-bold">{vente.prix}</p>
               <div>
-                <button className="py-2 md:px-4 text-[#22264B] hover:bg-[#22264B] hover:text-white rounded">
+              <Link to="/Agents"><button className="py-2 md:px-4 text-[#22264B] hover:bg-[#22264B] hover:text-white rounded">
                   Visiter
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>

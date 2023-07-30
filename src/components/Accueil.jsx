@@ -28,16 +28,13 @@ const Accueil = () => {
           COTE D'AZUR
         </h1>
 
-        <p className="sm:font-black md:text-[#535B9C] font-bold pl-20 py-5 md:pb-10">3 500 000 €</p>
-
         <p className="pl-20 font-bold text-black md:text-[#535B9C] py-5 md:py-10">
-          Paragraphe. Cliquez ici pour ajouter votre propre texte. Relatez ici
-          votre parcours.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi optio veniam unde assumenda molestiae doloribus!
         </p>
 
-        <button className="pl-20 py-4 px-4 font-black md:text-[#22264B]  hover:text-black rounded">
+        <Link to="/Avendre"><button className="pl-20 py-4 px-4 font-black md:text-[#22264B]  hover:text-black rounded">
           En savoir plus
-        </button>
+        </button></Link>
       </div>
 
       {/* zone avec exemples de propriétés à vendre */}

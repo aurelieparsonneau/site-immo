@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { locations } from "../datas/app_louer";
+import { Link } from "react-router-dom";
 
 const Alouer = () => {
   return (
@@ -27,9 +28,9 @@ const Alouer = () => {
               <p className="text-[#535B9C] pb-5">{location.description}</p>
               <p className="text-[#22264B] font-bold pb-2">{location.prix}</p>
               <div>
-                <button className=" border-current border-2 py-2 px-4 text-[#22264B] hover:bg-[#22264B] hover:text-white rounded-full fond-bold">
+              <Link to="/Agents"><button className=" border-current border-2 py-2 px-4 text-[#22264B] hover:bg-[#22264B] hover:text-white rounded-full fond-bold">
                   Visiter
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
